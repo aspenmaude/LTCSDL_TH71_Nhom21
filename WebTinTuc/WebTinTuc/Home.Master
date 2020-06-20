@@ -1,0 +1,64 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Home.master.cs" Inherits="WebTinTuc.Home" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>WebDocTinTuc</title>
+    <link href="Themes/Styles.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="menutop">
+            <div id="menu">
+                <ul>
+                    <li><a href="index.aspx"> Trang Chủ</a></li>
+                    <asp:Repeater ID="rpBanTin" runat="server">
+                        <ItemTemplate>
+                            <li><a href="News.aspx?idbantin=<%# Eval("IDBanTin") %>"><%#Eval("NoiDung")%></a></li> 
+                        </ItemTemplate>
+
+                    </asp:Repeater>
+                    <%
+                    if ((Boolean)Session["admin"] == false)
+                    {
+                        %>
+                             <li><a href="login.aspx">Đăng Nhập</a></li>
+                             <li><a href="Registration.aspx">Đăng ký</a></li>
+                    <%
+                    }
+                    else
+                    {
+                        %>
+                            <li><a href="logout.aspx">Thoát</a></li>
+                            <li><a href="InsertDetail.aspx">Thêm mới</a></li>
+                    <%} %>
+                       
+                </ul>
+            </div>
+        </div>
+        <div id="Right">
+           
+            <div id="Content">
+      
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+
+            </div>
+        </div>
+        <div class="clearfix">
+
+        </div>
+        <div id="Footer">
+            <div id="FooterContent">
+                CopyRight: Trần Hữu Nghĩa, Khoa Công Nghệ Thông Tin, Trường Đại Học Mở TP.HCM. <br />
+                Liên Hệ Qua Email: whoiam.thn@gmail.com
+            </div>
+        </div>
+        
+    </form>
+</body>
+</html>
+

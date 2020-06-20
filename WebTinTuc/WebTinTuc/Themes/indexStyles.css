@@ -1,0 +1,14 @@
+﻿#MainContent ul {
+    margin: 20px 15px 20px 10px;
+}
+
+    #MainContent ul li a {
+        color: #033b5f;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+        #MainContent ul li a:hover {
+            color: #6f0322;
+            text-decoration: underline;
+        }

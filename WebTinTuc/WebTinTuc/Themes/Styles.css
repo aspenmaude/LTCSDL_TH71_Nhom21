@@ -1,0 +1,137 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana;
+    font-size: 80%;
+    background: #9bccd2;
+}
+
+#menutop {
+    height: 30px;
+    background: #000;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+}
+
+#menu {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+    #menu ul {
+        list-style: none;
+        margin: 0;
+        padding-top: 7px;
+        padding-left: 0;
+    }
+
+    #menu li {
+        float: left;
+        margin: 0;
+    }
+
+    #menu ul li a {
+        padding-right: 20px;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+        #menu ul li a:hover {
+            color: #fff000;
+            text-decoration: underline;
+        }
+
+#Right {
+    width: 1000px;
+    margin: 30px auto;
+}
+
+#RightTitle {
+    float: right;
+    width: 330px;
+    background: #fff;
+    border: 2px solid #0a3c42;
+    box-shadow: 5px 5px 5px #808080;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+#Content {
+    float: left;
+    width: 700px;
+    background: #fff;
+    border: 2px solid #0a3c42;
+    box-shadow: 5px 5px 5px #808080;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+#RightContent {
+    padding: 10px 15px;
+    text-align: justify;
+}
+
+
+#MainContent {
+    padding: 10px 15px;
+    text-align: justify;
+    height:  auto;
+    width: auto;
+}
+
+#MainContent ul {
+    margin: 20px 15px 20px 10px;
+}
+
+#MainContent ul li a {
+    color: #033b5f;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#MainContent ul li a:hover {
+    color: #6f0322;
+    text-decoration: underline;
+}
+
+#Content h1 {
+        margin: 0;
+        padding: 5px 10px;
+        font-family: 'Times New Roman';
+        font-size: 16px;
+        background: #000;
+        color: #fff000;
+ }
+
+#RightTitle h1 {
+    margin: 0;
+    padding: 5px 10px;
+    font-family: 'Times New Roman';
+    font-size: 16px;
+    background: #000;
+    color: #fff000;
+}
+
+#Footer {
+   
+    background: #000;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+#FooterContent {
+    color: #fff;
+    padding: 15px;
+}
+
+.clearfix {
+    clear:both;
+}
